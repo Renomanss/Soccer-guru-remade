@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Lionel Messi", "value": 98, "image": "https://i.ibb.co/KcmBpq2X/image.webp" },
+  { "id": 2, "name": "Cristiano Ronaldo", "value": 97, "image": "https://i.ibb.co/KcmBpq2X/image.webp" },
+  { "id": 3, "name": "Neymar Jr.", "value": 92, "image": "https://i.ibb.co/KcmBpq2X/image.webp" },
+  { "id": 4, "name": "Kylian Mbappé", "value": 95, "image": "https://i.ibb.co/KcmBpq2X/image.webp" },
+  { "id": 5, "name": "Kevin De Bruyne", "value": 94, "image": "https://i.ibb.co/KcmBpq2X/image.webp" },
+  { "id": 6, "name": "Erling Haaland", "value": 93, "image": "https://i.ibb.co/KcmBpq2X/image.webp" },
+  { "id": 7, "name": "Vinícius Júnior", "value": 91, "image": "https://i.ibb.co/KcmBpq2X/image.webp" },
+  { "id": 8, "name": "Mohamed Salah", "value": 90, "image": "https://i.ibb.co/KcmBpq2X/image.webp" },
+  { "id": 9, "name": "Harry Kane", "value": 89, "image": "https://i.ibb.co/KcmBpq2X/image.webp" },
+  { "id": 10, "name": "Jude Bellingham", "value": 88, "image": "https://i.ibb.co/KcmBpq2X/image.webp" }
+] 
