@@ -3,8 +3,8 @@ const path = require('path');
 const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
-    name: 'cash',
-    description: 'Shows your cash amount',
+    name: 'match',
+    description: 'Simulates a match and shows your cash and total cards',
     execute(message, args) {
         const userId = message.author.id;
         const dataPath = path.join(__dirname, '../data.json');
@@ -14,12 +14,15 @@ module.exports = {
         const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
         const user = data.users[userId];
         if (!user) {
-            return message.reply('No cash data found!');
+            return message.reply('No data found!');
         }
+        const score1 = Math.floor(Math.random() * 5);
+        const score2 = Math.floor(Math.random() * 5);
+        const totalCards = user.kartlar ? user.kartlar.length : 0;
         const embed = new EmbedBuilder()
-            .setTitle('💸 Cash Info')
-            .setDescription(`👤 **User:** ${message.author.username}\n💸 **Cash:** ${user.bakiye}`)
-            .setColor(0x27ae60);
+            .setTitle(`⚽ FC Discord ${score1} - ${score2} Opponent`)
+            .setDescription(`💸 **Cash:** ${user.bakiye ?? 0}\n🎴 **Total Cards:** ${totalCards}`)
+            .setColor(0x3498db);
         message.channel.send({ embeds: [embed] });
     },
 }; 
